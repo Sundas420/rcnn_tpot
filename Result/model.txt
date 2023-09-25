@@ -1,0 +1,53 @@
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (None, 1, 13, 32)         320       
+                                                                 
+ activation (Activation)     (None, 1, 13, 32)         0         
+                                                                 
+ dropout (Dropout)           (None, 1, 13, 32)         0         
+                                                                 
+ batch_normalization (Batch  (None, 1, 13, 32)         128       
+ Normalization)                                                  
+                                                                 
+ conv2d_1 (Conv2D)           (None, 1, 13, 128)        36992     
+                                                                 
+ activation_1 (Activation)   (None, 1, 13, 128)        0         
+                                                                 
+ dropout_1 (Dropout)         (None, 1, 13, 128)        0         
+                                                                 
+ batch_normalization_1 (Bat  (None, 1, 13, 128)        512       
+ chNormalization)                                                
+                                                                 
+ flatten (Flatten)           (None, 1664)              0         
+                                                                 
+ dropout_2 (Dropout)         (None, 1664)              0         
+                                                                 
+ dense (Dense)               (None, 256)               426240    
+                                                                 
+ activation_2 (Activation)   (None, 256)               0         
+                                                                 
+ dropout_3 (Dropout)         (None, 256)               0         
+                                                                 
+ batch_normalization_2 (Bat  (None, 256)               1024      
+ chNormalization)                                                
+                                                                 
+ dense_1 (Dense)             (None, 128)               32896     
+                                                                 
+ activation_3 (Activation)   (None, 128)               0         
+                                                                 
+ dropout_4 (Dropout)         (None, 128)               0         
+                                                                 
+ batch_normalization_3 (Bat  (None, 128)               512       
+ chNormalization)                                                
+                                                                 
+ dense_2 (Dense)             (None, 1)                 129       
+                                                                 
+ activation_4 (Activation)   (None, 1)                 0         
+                                                                 
+=================================================================
+Total params: 498753 (1.90 MB)
+Trainable params: 497665 (1.90 MB)
+Non-trainable params: 1088 (4.25 KB)
+_________________________________________________________________
